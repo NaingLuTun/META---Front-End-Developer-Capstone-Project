@@ -1,0 +1,127 @@
+.menuSection {
+    padding: 20px;
+    background-color: white;
+}
+
+.menuHeaderContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menuHeader {
+    font-size: 28px;
+}
+
+.menuBtn {
+    color: #4a6159;
+    background-color: #f4ce14;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+}
+
+.menuBtn:hover {
+    cursor: pointer;
+}
+
+.menuCardsContainer {
+    padding: 20px;
+}
+
+.menuCard {
+    background-color: #edefee;
+    border-radius: 16px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.menuCardImg {
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.menuCardInfoContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuCardHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dishPrice {
+    color: #e1997c;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.menuCardDescription {
+    margin-bottom: 20px;
+}
+
+.deliveryBtn {
+    position: absolute;
+    border: none;
+    background-color: #edefee;
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    gap: 8px;
+    bottom: 20px;
+    left: 20px;
+}
+
+.deliveryBtn:hover {
+    cursor: pointer;
+}
+
+
+
+.deliveryImg {
+    width: 18px;
+}
+
+@media (min-width: 760px) {
+    .menuCardsContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menuCardDishName {
+        font-size: 18px;
+        text-wrap: nowrap;
+    }
+
+    .menuCard {
+        width: 220px;
+    }
+}
+
+@media (min-width: 1080px) {
+
+    .menuSection {
+        padding: 50px 100px;
+    }
+
+    .menuHeader {
+        font-size: 30px;
+    }
+
+    .menuCardDishName {
+        font-size: 24px;
+        text-wrap: nowrap;
+    }
+
+    .menuCard {
+        width: 30%;
+    }
+}

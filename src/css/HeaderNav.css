@@ -1,0 +1,79 @@
+/* Header and Nav */
+
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .homeLogo {
+    width: 150px;
+  }
+  
+  .homeLogo:hover {
+    cursor: pointer;
+  }
+  
+  .mainNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+  }
+
+
+  .hamburgerNavLinksContainer {
+    position: absolute;
+    background-color: white;
+    left: 0;
+    top: 70px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .navLinksContainer {
+/*  display: flex;
+    gap: 20px; 
+    
+    // for larger devices
+    */
+    display: none;
+  }
+  
+  .navLinkLists {
+    list-style: none;
+  }
+  
+  .navLinks {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .navLinks:hover {
+    color: #f1cd14;
+  }
+
+  @media (min-width: 760px) {
+    .hamburgerNavLinksContainer {
+      display: none;
+    }
+    
+    .hamburgerMenuImg {
+      display: none;
+    }
+
+    .navLinksContainer {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  @media (min-width: 1080px) {
+    .mainNav {
+      padding: 20px 100px;
+    }
+  }

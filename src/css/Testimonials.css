@@ -1,0 +1,54 @@
+.testimonialsSection {
+    padding: 20px;
+    background-color: #4a6159;
+}
+
+.testimonialsHeader{
+    font-size: 28px;
+    text-align: center;
+    color: white;
+}
+
+.testimonialsCard {
+    padding: 20px;
+    background-color: white;
+    border-radius: 16px;
+    margin: 20px 0;
+}
+
+.starImg {
+    width: 20px;
+}
+
+.testimonialsCardHeaderContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.personImg {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.personName {
+    font-size: 20px;
+}
+
+@media (min-width: 760px) {
+    .testimonialsCardsContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .testimonialsCard {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1080px) {
+    .testimonialsSection {
+        padding: 50px 100px;
+    }
+}
