@@ -1,26 +1,22 @@
 import "./css/App.css"
 
-import Header from "./components/Header"
-import Footer from "./components/Footer"
-import Hero from "./components/Hero"
-import Highlight from "./components/Highlight"
-import About from "./components/About"
-import Testimonials from "./components/Testimonials"
+import HomePage from "./pages/HomePage"
+
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom"
+import ReservationPage from "./pages/ReservationPage"
 
 function App() {
 
   return (
     <>
-      <Header />
-
-      <main>
-        <Hero />
-        <Highlight />
-        <Testimonials />
-        <About />
-      </main>
-
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/home-page" element={<HomePage />} />
+          <Route path="/reservation" element={<ReservationPage />}/>
+          <Route path="*" element={<Navigate to="/home-page" />} />
+        </Routes>
+      </Router>
+      
     </>
   )
 }

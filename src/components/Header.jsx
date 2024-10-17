@@ -3,6 +3,7 @@ import "../css/HeaderNav.css"
 import hamburgerMenu from "../assets/icons_assets/hamburger_icon1.svg"
 
 import navLogo from "../assets/icons_assets/Logo1.svg"
+import { Link } from 'react-router-dom'
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false)
   
@@ -19,12 +20,12 @@ const Header = () => {
             {menuActive && 
             (
               <ul className="hamburgerNavLinksContainer">
-                <li className="navLinkLists"><a href="/" className="navLinks">Home</a></li>
-                <li className="navLinkLists"><a href="/" className="navLinks">About</a></li>
-                <li className="navLinkLists"><a href="/" className="navLinks">Menu</a></li>
-                <li className="navLinkLists"><a href="" className="navLinks">Reservations</a></li>
-                <li className="navLinkLists"><a href="/" className="navLinks">Order Online</a></li>
-                <li className="navLinkLists"><a href="/" className="navLinks">Login</a></li>
+                <li className="navLinkLists"><Link to="/home-page" className="navLinks">Home</Link></li>
+                <li className="navLinkLists"><Link to="/home-page" className="navLinks">About</Link></li>
+                <li className="navLinkLists"><Link to="/home-page" className="navLinks">Menu</Link></li>
+                <li className="navLinkLists"><Link to="/reservation" className="navLinks">Reservations</Link></li>
+                <li className="navLinkLists"><Link to="/home-page" className="navLinks">Order Online</Link></li>
+                <li className="navLinkLists"><Link to="/home-page" className="navLinks">Login</Link></li>
               </ul>
             )
 
@@ -34,12 +35,12 @@ const Header = () => {
 
 
           <ul className="navLinksContainer">
-            <li className="navLinkLists"><a href="/" className="navLinks">Home</a></li>
-            <li className="navLinkLists"><a href="/" className="navLinks">About</a></li>
-            <li className="navLinkLists"><a href="/" className="navLinks">Menu</a></li>
-            <li className="navLinkLists"><a href="" className="navLinks">Reservations</a></li>
-            <li className="navLinkLists"><a href="/" className="navLinks">Order Online</a></li>
-            <li className="navLinkLists"><a href="/" className="navLinks">Login</a></li>
+            <li className="navLinkLists"><Link to="/home-page" className="navLinks">Home</Link></li>
+            <li className="navLinkLists"><Link to="/home-page" className="navLinks">About</Link></li>
+            <li className="navLinkLists"><Link to="/home-page" className="navLinks">Menu</Link></li>
+            <li className="navLinkLists"><Link to="/reservation" className="navLinks">Reservations</Link></li>
+            <li className="navLinkLists"><Link to="/home-page" className="navLinks">Order Online</Link></li>
+            <li className="navLinkLists"><Link to="/home-page" className="navLinks">Login</Link></li>
           </ul>
         </nav>
       </header>
