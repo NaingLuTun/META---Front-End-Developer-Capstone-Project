@@ -3,6 +3,8 @@ import "../css/Hero.css"
 
 import heroImg from "../assets/icons_assets/restaurant chef B.jpg"
 
+import { Link } from 'react-router-dom'
+
 const Hero = () => {
   return (
     <section className="heroSection">
@@ -16,7 +18,7 @@ const Hero = () => {
             </p>
 
             <button className="reserveTableBtn">
-                Reserve a table
+                <Link className="reserveTableLink" to="/reservation">Reserve a table</Link>
             </button>
         </div>
 

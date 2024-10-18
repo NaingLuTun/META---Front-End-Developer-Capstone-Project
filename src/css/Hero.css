@@ -37,6 +37,11 @@
     cursor: pointer;
 }
 
+.reserveTableLink {
+    text-decoration: none;
+    color: #4a6159;
+}
+
 
 .heroSectionImgContainer {
     width: 100%;
