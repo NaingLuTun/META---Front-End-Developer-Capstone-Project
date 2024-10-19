@@ -1,0 +1,131 @@
+.reservationForm {
+    padding: 20px;
+    background-color: white;
+}
+
+.reservationHeader {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+
+.requiredSign {
+    color: rgb(250, 57, 57);
+}
+
+.fieldset {
+    padding: 20px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #4a6159;
+    border-color: #4a6159;
+    color: white;
+}
+
+.inputfieldContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+#reservationDate, #reservationTime, #numberOfGuests, #reservationOccasion {
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+}
+
+.confirmationBtnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmationBtn {
+    color: #4a6159;
+    background-color: #f4ce14;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+}
+
+.confirmationBtn:hover {
+    cursor: pointer;
+}
+
+.confirmationBtn:disabled {
+    opacity: 0.4;
+}
+
+.confirmationContainer {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmationText {
+    font-size: 18px;
+    font-weight: 700;
+    color: #4a6159;
+    margin-bottom: 20px;
+}
+
+.backToForm {
+    color: #4a6159;
+    background-color: #f4ce14;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+
+}
+
+.backToFormIcon {
+    width: 16px;
+}
+
+@media (min-width: 760px) {
+    label {
+        font-size: 18px;
+    }
+
+    #reservationDate, #reservationTime, #numberOfGuests, #reservationOccasion {
+        font-size: 16px;
+    }
+
+    .confirmationBtn {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1080px) {
+
+    .reservationForm {
+        padding: 50px 100px;
+    }
+
+    .reservationHeader {
+        font-size: 30px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    #reservationDate, #reservationTime, #numberOfGuests, #reservationOccasion {
+        font-size: 18px;
+    }
+
+    .confirmationBtn {
+        font-size: 20px;
+    }
+}

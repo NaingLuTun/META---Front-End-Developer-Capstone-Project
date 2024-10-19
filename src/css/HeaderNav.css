@@ -33,6 +33,10 @@
     width: 100%;
     padding: 20px;
   }
+
+  .hamburgerNavLinksContainer > li {
+    margin: 10px 0;
+  }
   
   .navLinksContainer {
 /*  display: flex;
